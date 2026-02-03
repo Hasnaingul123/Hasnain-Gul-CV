@@ -10,6 +10,9 @@ Complete step-by-step instructions to publish your CV website to GitHub Pages.
 - GitHub account (username: **Hasnaingul123**)
 - Repository already exists: **Hasnain-Gul-CV**
 
+> [!IMPORTANT]
+> A `.nojekyll` file has been added to your repository to disable Jekyll processing. This is necessary because your CV is a simple HTML/CSS/JS website and doesn't need Jekyll's static site generation.
+
 ---
 
 ## 🔧 Step 1: Verify Your Local Repository

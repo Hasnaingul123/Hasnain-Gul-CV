@@ -1,115 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasnain Gul - Machine Learning Engineer</title>
+    <title>Hasnain Gul - AI/ML Engineer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="name">HASNAIN GUL</h1>
-            <h2 class="title">Machine Learning Engineer | AI Practitioner</h2>
-            <div class="contact-info">
-                <a href="mailto:hasnaing134@gmail.com">hasnaing134@gmail.com</a>
-                <span>|</span>
-                <a href="tel:+923479555964">+92-3479555964</a>
-                <span>|</span>
-                <span>Harichand Charsadda</span>
-            </div>
-            <div class="social-links">
-                <a href="https://github.com/Hasnaingul123" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/hasnain-gul-27a8382b9" target="_blank">LinkedIn</a>
-            </div>
-        </header>
-
-        <section class="section about">
-            <h3 class="section-title">About Me</h3>
-            <p>
-                An enthusiastic and dedicated BS Software Engineering student with a strong foundation in Deep Learning, Machine Learning, and Python. Experienced in building and deploying models for a variety of tasks, including image classification, forecasting, and recommendation systems. Seeking to apply practical skills and a passion for AI to real-world challenges.
-            </p>
-        </section>
-
-        <section class="section">
-            <h3 class="section-title">Work Experience</h3>
-            <div class="experience-item">
-                <div class="job-header">
-                    <h4 class="job-title">DEEP NEURAL NETWORKS BOOTCAMP (8 WEEKS)</h4>
-                    <span class="company-location">GIKI – Swabi</span>
-                    <span class="date">2024</span>
-                </div>
-                <p class="job-description">
-                    I successfully completed an 8-week bootcamp on Deep Neural Networks where I learned the foundations of deep learning, worked with Python and TensorFlow/Keras, and practiced building models for tasks like image classification and predictions. This experience gave me strong practical exposure to how neural networks are trained and applied in real-world problems.
-                </p>
-            </div>
-        </section>
-
-        <section class="section">
-            <h3 class="section-title">Projects</h3>
-            <ul class="project-list">
-                <li>Solar Production and Load Prediction (SkyElectric, SkyLabs)</li>
-                <li>Traffic Sign Recognition</li>
-                <li>Sales Forecasting</li>
-                <li>Music Genre Classification</li>
-                <li>Movie Recommendation System</li>
-            </ul>
-        </section>
-
-        <div class="two-column">
-            <section class="section">
-                <h3 class="section-title">Education</h3>
-                <div class="education-item">
-                    <h4 class="school">University of Engineering and Technology (UET) Mardan</h4>
-                    <p class="degree">BS in Software Engineering</p>
-                    <p class="date">2022 - 2026</p>
-                </div>
-                <div class="education-item">
-                    <h4 class="school">Government College Peshawar (10052)</h4>
-                    <p class="degree">FSc Pre-Engineering</p>
-                    <p class="details">Marks: 955/1100</p>
-                    <p class="date">2020 - 2022</p>
-                </div>
-                <div class="education-item">
-                    <h4 class="school">Read Public School and College, Harichand</h4>
-                    <p class="degree">Matriculation</p>
-                    <p class="details">Marks: 928/1100</p>
-                    <p class="date">2018 - 2020</p>
-                </div>
-            </section>
-
-            <section class="section">
-                <h3 class="section-title">Skills</h3>
-                <div class="skills-grid">
-                    <span class="skill-tag">Machine Learning</span>
-                    <span class="skill-tag">Deep Learning</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Data Structures</span>
-                    <span class="skill-tag">TensorFlow/Keras</span>
-                    <span class="skill-tag">Scikit-learn</span>
-                    <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">Numpy</span>
-                </div>
-
-                <h3 class="section-title" style="margin-top: 1.5rem;">Certificates</h3>
-                <ul class="cert-list">
-                    <li>AI For Everyone</li>
-                    <li>Machine Learning Specialization</li>
-                    <li>Fundamentals of Deep Learning</li>
-                    <li>DNN From GIKI</li>
-                </ul>
-
-                <h3 class="section-title" style="margin-top: 1.5rem;">Languages</h3>
-                <ul class="lang-list">
-                    <li>English</li>
-                    <li>Pashto</li>
-                    <li>Urdu</li>
-                </ul>
-            </section>
-        </div>
+    <!-- Animated Background Elements -->
+    <div class="particles" id="particles"></div>
+    <div class="geometric-bg">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
     </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Hasnain Gul</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <img src="IMG-20240221-WA0004.jpg" alt="Hasnain Gul" class="profile-pic">
+                    </div>
+                    <h1> Hasnain Gul</h1>
+                </div>
+                <h2>AI/ML Engineer | Deep Learning Specialist | RAG Expert</h2>
+                <p>Building enterprise-grade AI applications with expertise in NLP, Deep Learning, and RAG Architectures
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-elements">
+                    <div class="floating-item" data-tech="Python"><i class="fab fa-python"></i></div>
+                    <div class="floating-item" data-tech="AI"><i class="fas fa-brain"></i></div>
+                    <div class="floating-item" data-tech="Data"><i class="fas fa-chart-line"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Aspiring AI/ML Engineer with a strong foundation in Deep Learning, NLP, and RAG Architectures.
+                        Proven experience in building full-stack AI applications, including enterprise-grade
+                        disinformation detection systems and educational tools.</p>
+                    <p>Proficient in Python, FastAPI, and Scikit-learn, with a Bachelor's degree from UET Mardan.
+                        Passionate about deploying scalable AI solutions to solve real-world problems.</p>
+                    <p>My expertise spans from developing multi-modal analysis systems to creating intelligent RAG-based
+                        applications that ground answers in user-provided content, significantly reducing model
+                        hallucinations.</p>
+                    <div class="education">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <p><strong>BSc Computer Software Engineering</strong><br>
+                            University of Engineering and Technology (UET), Mardan<br>
+                            CGPA: 3.1 | Currently in 8th semester</p>
+                        <p><strong>Intermediate (Pre-Engineering)</strong><br>
+                            Govt College Peshawar<br>
+                            Marks: 955/1100</p>
+                        <p><strong>Matriculation</strong><br>
+                            Read Public School and College, Harichand<br>
+                            Marks: 928/1100</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Internships Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Internships</h2>
+            <p class="section-subtitle">Professional certifications and internship experiences</p>
+
+            <div class="certificates-grid">
+                <!-- Certificate Card 1 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Deep Neural Networks</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> GIKI (8-Week Bootcamp)</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 2024</p>
+                        <p class="certificate-description">Intensive training in Deep Neural Networks with hands-on
+                            experience in backpropagation and model optimization</p>
+                        <a href="certificates/deep-neural-networks.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate Card 2 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Machine Learning Specialization</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> Coursera (DeepLearning.AI)</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 2024</p>
+                        <p class="certificate-description">Comprehensive ML specialization covering supervised and
+                            unsupervised learning algorithms</p>
+                        <a href="certificates/ml-specialization.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate Card 3 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Retrieval Augmented Generation (RAG)</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> Coursera</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 2024</p>
+                        <p class="certificate-description">Advanced RAG implementation techniques for building grounded
+                            AI applications</p>
+                        <a href="certificates/rag-course.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate Card 4 -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>AI For Everyone</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> Coursera</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 2024</p>
+                        <p class="certificate-description">Foundational understanding of AI technologies and their
+                            business applications</p>
+                        <a href="certificates/ai-for-everyone.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certificate Card 5 -->
+
+
+                <!-- Internship Card -->
+                <div class="certificate-card internship-card">
+                    <div class="certificate-icon internship-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>AI Research Trainee - GIKI Bootcamp</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> GIK Institute (GIKI)</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 8 Weeks</p>
+                        <p class="certificate-description">Completed intensive training in Deep Neural Networks with
+                            hands-on capstone projects focusing on Advanced Neural Networks</p>
+                        <a href="certificates/giki-bootcamp.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Internship Card 2 -->
+                <div class="certificate-card internship-card">
+                    <div class="certificate-icon internship-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>AI/ML Internship - itssolera</h3>
+                        <p class="certificate-issuer"><i class="fas fa-building"></i> itssolera</p>
+                        <p class="certificate-date"><i class="fas fa-calendar"></i> 3 Months</p>
+                        <p class="certificate-description">Gained practical experience in AI/ML development and
+                            deployment of production-grade solutions</p>
+                        <a href="certificates/itssolera-internship.pdf" class="btn-download" download>
+                            <i class="fas fa-download"></i> Download Form
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+
+            <!-- Search and Filter -->
+            <div class="project-controls">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="projectSearch" placeholder="Search projects..." class="search-input">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI/ML</button>
+                    <button class="filter-btn" data-filter="data-science">Data Science</button>
+                    <button class="filter-btn" data-filter="analytics">Analytics</button>
+                    <button class="filter-btn" data-filter="web-dev">Web Development</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Advanced Multi-Modal Disinformation Intelligence System -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Advanced Multi-Modal Disinformation Intelligence System</h3>
+                    </div>
+                    <p>Enterprise-grade platform to detect and visualize disinformation campaigns in real-time using
+                        multi-modal analysis (text, image, video) to calculate "Truth Scores" for content verification.
+                        Utilized Graph Databases to map narrative spreads and visualize relationships between data
+                        points.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Graph Database</span>
+                        <span>Deep Learning</span>
+                        <span>Multi-Modal AI</span>
+                    </div>
+                </div>
+
+                <!-- Intelligent RAG-Based Educational Tutor -->
+                <div class="project-card" data-category="ai-ml">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Intelligent RAG-Based Educational Tutor</h3>
+                    </div>
+                    <p>Full-Stack RAG application to assist O/A Level students by processing uploaded PDF notes.
+                        Engineered a retrieval system to strictly ground answers in user-provided content, significantly
+                        reducing model hallucinations. Deployed the backend using FastAPI to serve real-time user
+                        queries.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>LangChain</span>
+                        <span>FastAPI</span>
+                        <span>RAG</span>
+                    </div>
+                </div>
+
+                <!-- Solar Production & Load Prediction -->
+                <div class="project-card" data-category="data-science">
+                    <div class="project-header">
+                        <i class="fas fa-solar-panel"></i>
+                        <h3>Solar Production & Load Prediction</h3>
+                    </div>
+                    <p>Predicted PV generation and user load at 10-minute intervals using real-world data from
+                        SkyElectric/SkyLabs. Achieved low Mean Absolute Error (MAE) by optimizing ML/DL models in a
+                        Kaggle competition using time-series analysis techniques.</p>
+                    <div class="project-tech">
+                        <span>Time-Series Analysis</span>
+                        <span>Scikit-learn</span>
+                        <span>Python</span>
+                        <span>ML/DL</span>
+                    </div>
+                </div>
+
+                <!-- Air Quality Prediction -->
+                <div class="project-card" data-category="data-science">
+                    <div class="project-header">
+                        <i class="fas fa-wind"></i>
+                        <h3>Air Quality Prediction</h3>
+                    </div>
+                    <p>Modeled air quality levels using supervised learning techniques including Linear Regression and
+                        Random Forest. Performed end-to-end data lifecycle management: data cleaning, visualization, and
+                        model evaluation in Google Colab.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Random Forest</span>
+                        <span>Data Visualization</span>
+                        <span>Google Colab</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Count -->
+            <div class="project-count">
+                <p>Showing <span id="projectCount">4</span> projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Python (Advanced)</span>
+                        <span class="skill-item">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">NumPy</span>
+                        <span class="skill-item">Pandas</span>
+                        <span class="skill-item">XGBoost</span>
+                        <span class="skill-item">Predictive Modeling</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Deep Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">TensorFlow</span>
+                        <span class="skill-item">Neural Networks</span>
+                        <span class="skill-item">Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-comments"></i> Generative AI & NLP</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">RAG Implementation</span>
+                        <span class="skill-item">LangChain</span>
+                        <span class="skill-item">Vector Databases</span>
+                        <span class="skill-item">Hugging Face</span>
+                        <span class="skill-item">LLMs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Deployment & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">FastAPI</span>
+                        <span class="skill-item">Git/GitHub</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">Google Colab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:hasnaing134@gmail.com" class="contact-link">hasnaing134@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/hasnain-gul-27a8382b9" target="_blank"
+                                class="contact-link">hasnain-gul-27a8382b9</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/Hasnaingul123" target="_blank"
+                                class="contact-link">github.com/Hasnaingul123</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <a href="tel:+923479555964" class="contact-link">+92 347 9555964</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p class="contact-link" style="color: inherit; text-decoration: none;">UET Mardan, Mardan
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Hasnain Gul. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

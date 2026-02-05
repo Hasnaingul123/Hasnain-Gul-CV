@@ -31,8 +31,8 @@ const ProjectsSection = () => {
                             key={category.id}
                             onClick={() => setActiveFilter(category.id)}
                             className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${activeFilter === category.id
-                                    ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-colorful scale-105'
-                                    : 'bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 hover:from-purple-200 hover:to-pink-200 shadow-lg'
+                                ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-colorful scale-105'
+                                : 'bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 hover:from-purple-200 hover:to-pink-200 shadow-lg'
                                 }`}
                         >
                             {category.label}
@@ -70,10 +70,10 @@ const ProjectsSection = () => {
                             colorScheme={colorSchemes[index % colorSchemes.length]}
                         >
                             <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${index % 5 === 0 ? 'from-purple-500 to-pink-500' :
-                                    index % 5 === 1 ? 'from-blue-500 to-cyan-500' :
-                                        index % 5 === 2 ? 'from-green-500 to-cyan-500' :
-                                            index % 5 === 3 ? 'from-orange-500 to-pink-500' :
-                                                'from-purple-500 via-pink-500 to-cyan-500'
+                                index % 5 === 1 ? 'from-blue-500 to-cyan-500' :
+                                    index % 5 === 2 ? 'from-green-500 to-cyan-500' :
+                                        index % 5 === 3 ? 'from-orange-500 to-pink-500' :
+                                            'from-purple-500 via-pink-500 to-cyan-500'
                                 } flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500 shadow-colorful`}>
                                 <i className={`fas ${project.icon} text-3xl text-white`}></i>
                             </div>

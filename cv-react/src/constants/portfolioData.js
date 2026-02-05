@@ -4,7 +4,7 @@ export const personalInfo = {
     title: "AI/ML Engineer | Deep Learning Specialist | RAG Expert",
     tagline: "Building enterprise-grade AI applications with expertise in NLP, Deep Learning, and RAG Architectures",
     profileImage: "/assets/images/9011.jpg",
-    email: "hasnaing134@gmail.com",
+    email: "contact@hasnaingul.me",
     phone: "+92 347 9555964",
     location: "UET Mardan, Mardan",
     linkedin: "https://www.linkedin.com/in/hasnain-gul-27a8382b9",
@@ -55,7 +55,7 @@ export const certificates = [
         issuer: "GIKI (8-Week Bootcamp)",
         date: "2024",
         description: "Intensive training in Deep Neural Networks with hands-on experience in backpropagation and model optimization",
-        downloadUrl: "/certificates/deep-neural-networks.pdf",
+        downloadUrl: "/certificates/Machine Learning Specialization_page-0001.jpg",
         type: "certificate",
         icon: "fa-certificate"
     },
@@ -65,7 +65,7 @@ export const certificates = [
         issuer: "Coursera (DeepLearning.AI)",
         date: "2024",
         description: "Comprehensive ML specialization covering supervised and unsupervised learning algorithms",
-        downloadUrl: "/certificates/ml-specialization.pdf",
+        downloadUrl: "/certificates/Machine Learning Specialization_page-0001.jpg",
         type: "certificate",
         icon: "fa-certificate"
     },
@@ -75,7 +75,7 @@ export const certificates = [
         issuer: "Coursera",
         date: "2024",
         description: "Advanced RAG implementation techniques for building grounded AI applications",
-        downloadUrl: "/certificates/rag-course.pdf",
+        downloadUrl: "/certificates/RAG certificate_page-0001.jpg",
         type: "certificate",
         icon: "fa-certificate"
     },
@@ -85,7 +85,7 @@ export const certificates = [
         issuer: "Coursera",
         date: "2024",
         description: "Foundational understanding of AI technologies and their business applications",
-        downloadUrl: "/certificates/ai-for-everyone.pdf",
+        downloadUrl: "/certificates/AI For Everyone_page-0001.jpg",
         type: "certificate",
         icon: "fa-certificate"
     },
@@ -95,7 +95,7 @@ export const certificates = [
         issuer: "GIK Institute (GIKI)",
         date: "8 Weeks",
         description: "Completed intensive training in Deep Neural Networks with hands-on capstone projects focusing on Advanced Neural Networks",
-        downloadUrl: "/certificates/giki-bootcamp.pdf",
+        downloadUrl: "/certificates/Machine Learning Specialization_page-0001.jpg",
         type: "internship",
         icon: "fa-briefcase"
     },
@@ -105,7 +105,7 @@ export const certificates = [
         issuer: "Codsoft",
         date: "1 Month",
         description: "Developed ML models for real-world applications including recommendation systems and predictive analytics",
-        downloadUrl: "/certificates/codsoft-internship.pdf",
+        downloadUrl: "/certificates/Python Programming Fundamentals_page-0001.jpg",
         type: "internship",
         icon: "fa-briefcase"
     }
@@ -229,8 +229,8 @@ export const contactInfo = [
         id: 1,
         icon: "fa-envelope",
         label: "Email",
-        value: "hasnaing134@gmail.com",
-        link: "mailto:hasnaing134@gmail.com"
+        value: "contact@hasnaingul.me",
+        link: "mailto:contact@hasnaingul.me"
     },
     {
         id: 2,

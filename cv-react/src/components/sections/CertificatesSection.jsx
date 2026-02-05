@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import SectionTitle from '../ui/SectionTitle';
 import Card from '../ui/Card';
+import CertificateModal from '../ui/CertificateModal';
 import { certificates } from '../../constants/portfolioData';
 import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
@@ -8,6 +10,7 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
  */
 const CertificatesSection = () => {
     const [ref, isVisible] = useScrollAnimation();
+    const [selectedCertificate, setSelectedCertificate] = useState(null);
 
     return (
         <section id="certificates" className="py-24 md:py-32 bg-white">
@@ -53,20 +56,30 @@ const CertificatesSection = () => {
                                 {cert.description}
                             </p>
 
-                            <a
-                                href={cert.downloadUrl}
-                                download
+                            <button
+                                onClick={() => setSelectedCertificate({
+                                    image: cert.downloadUrl,
+                                    title: cert.title
+                                })}
                                 className={`inline-flex items-center gap-2 font-medium transition-all duration-300 ${cert.type === 'internship'
                                     ? 'text-terra-600 hover:text-terra-700'
                                     : 'text-sage-600 hover:text-sage-700'
                                     }`}
                             >
-                                <i className="fas fa-download"></i>
-                                Download Certificate
-                            </a>
+                                <i className="fas fa-eye"></i>
+                                Show Certificate
+                            </button>
                         </Card>
                     ))}
                 </div>
+
+                {/* Certificate Modal */}
+                <CertificateModal
+                    isOpen={selectedCertificate !== null}
+                    onClose={() => setSelectedCertificate(null)}
+                    certificateImage={selectedCertificate?.image}
+                    certificateTitle={selectedCertificate?.title}
+                />
             </div>
         </section>
     );

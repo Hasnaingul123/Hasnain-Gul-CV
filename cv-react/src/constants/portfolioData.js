@@ -102,7 +102,7 @@ export const certificates = [
     {
         id: 6,
         title: "AI/ML Intern",
-        issuer: "Codsoft",
+        issuer: "ITSOLERA",
         date: "1 Month",
         description: "Developed ML models for real-world applications including recommendation systems and predictive analytics",
         downloadUrl: "/certificates/Internship Certificate.png",

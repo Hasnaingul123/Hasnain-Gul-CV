@@ -54,6 +54,17 @@ const HeroSection = () => {
                             <Button variant="secondary" href="#contact">
                                 Get In Touch
                             </Button>
+                            <a
+                                href="/HasnainGul-CV.pdf"
+                                download="HasnainGul-CV.pdf"
+                                className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-neon-green flex items-center gap-2"
+                            >
+                                <span className="relative z-10 flex items-center gap-2">
+                                    <i className="fas fa-download"></i>
+                                    Download CV
+                                </span>
+                                <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 to-green-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </a>
                         </div>
                     </div>
 

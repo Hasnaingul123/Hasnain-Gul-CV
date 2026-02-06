@@ -162,6 +162,7 @@ export default {
         'soft': '0 4px 20px rgba(139, 92, 246, 0.1)',
         'colorful': '0 10px 30px rgba(139, 92, 246, 0.3), 0 5px 15px rgba(236, 72, 153, 0.2)',
         'neon': '0 0 20px rgba(139, 92, 246, 0.5), 0 0 40px rgba(236, 72, 153, 0.3), 0 0 60px rgba(34, 211, 238, 0.2)',
+        'neon-green': '0 0 20px rgba(34, 197, 94, 0.5), 0 0 40px rgba(16, 185, 129, 0.3), 0 0 60px rgba(5, 150, 105, 0.2)',
       },
       backdropBlur: {
         'xs': '2px',

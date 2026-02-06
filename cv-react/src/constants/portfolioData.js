@@ -55,7 +55,7 @@ export const certificates = [
         issuer: "GIKI (8-Week Bootcamp)",
         date: "2024",
         description: "Intensive training in Deep Neural Networks with hands-on experience in backpropagation and model optimization",
-        downloadUrl: "/certificates/Machine Learning Specialization_page-0001.jpg",
+        downloadUrl: "/certificates/GIKi Bootcamp certificate.jpg",
         type: "certificate",
         icon: "fa-certificate"
     },
@@ -95,7 +95,7 @@ export const certificates = [
         issuer: "GIK Institute (GIKI)",
         date: "8 Weeks",
         description: "Completed intensive training in Deep Neural Networks with hands-on capstone projects focusing on Advanced Neural Networks",
-        downloadUrl: "/certificates/Machine Learning Specialization_page-0001.jpg",
+        downloadUrl: "/certificates/GIKi Bootcamp certificate.jpg",
         type: "internship",
         icon: "fa-briefcase"
     },
@@ -105,7 +105,7 @@ export const certificates = [
         issuer: "Codsoft",
         date: "1 Month",
         description: "Developed ML models for real-world applications including recommendation systems and predictive analytics",
-        downloadUrl: "/certificates/Python Programming Fundamentals_page-0001.jpg",
+        downloadUrl: "/certificates/Internship Certificate.png",
         type: "internship",
         icon: "fa-briefcase"
     }

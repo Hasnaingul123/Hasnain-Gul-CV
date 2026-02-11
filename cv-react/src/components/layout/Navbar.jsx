@@ -33,15 +33,15 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 w-full z-[1000] transition-all duration-500 ${isScrolled
-                    ? 'bg-white/90 backdrop-blur-xl shadow-colorful'
-                    : 'bg-white/80 backdrop-blur-lg'
+                ? 'bg-white/90 backdrop-blur-xl shadow-colorful'
+                : 'bg-white/80 backdrop-blur-lg'
                 }`}
         >
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="flex justify-between items-center h-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
+                <div className="flex justify-between items-center h-16 sm:h-20">
                     {/* Logo */}
                     <div className="nav-logo">
-                        <h2 className="font-heading text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
+                        <h2 className="font-heading text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent hover:from-purple-700 hover:to-pink-700 transition-all duration-300">
                             Hasnain Gul
                         </h2>
                     </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`md:hidden fixed top-20 left-0 w-full bg-white/95 backdrop-blur-xl shadow-colorful transition-all duration-300 ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+                className={`md:hidden fixed top-16 sm:top-20 left-0 w-full bg-white/95 backdrop-blur-xl shadow-colorful transition-all duration-300 ${isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                     }`}
             >
                 <ul className="flex flex-col p-6 gap-4">

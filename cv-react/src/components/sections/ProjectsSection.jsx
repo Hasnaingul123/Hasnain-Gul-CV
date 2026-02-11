@@ -18,19 +18,19 @@ const ProjectsSection = () => {
     const colorSchemes = ['purple', 'blue', 'green', 'orange', 'rainbow'];
 
     return (
-        <section id="projects" className="py-24 md:py-32 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="projects" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionTitle subtitle="Showcasing my work in AI/ML, Data Science, and Web Development">
                     Projects
                 </SectionTitle>
 
                 {/* Filter Buttons */}
-                <div className="flex flex-wrap justify-center gap-3 mb-10">
+                <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10">
                     {filterCategories.map((category) => (
                         <button
                             key={category.id}
                             onClick={() => setActiveFilter(category.id)}
-                            className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${activeFilter === category.id
+                            className={`px-4 py-2 sm:px-6 sm:py-3 rounded-xl font-semibold text-sm sm:text-base transition-all duration-300 transform hover:scale-105 ${activeFilter === category.id
                                 ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-colorful scale-105'
                                 : 'bg-gradient-to-r from-purple-100 to-pink-100 text-purple-700 hover:from-purple-200 hover:to-pink-200 shadow-lg'
                                 }`}
@@ -41,15 +41,15 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Search Input */}
-                <div className="max-w-md mx-auto mb-16">
+                <div className="max-w-md mx-auto mb-12 sm:mb-16">
                     <div className="relative">
-                        <i className="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 text-purple-400"></i>
+                        <i className="fas fa-search absolute left-4 sm:left-5 top-1/2 transform -translate-y-1/2 text-purple-400"></i>
                         <input
                             type="text"
                             placeholder="Search projects..."
                             value={searchTerm}
                             onChange={(e) => setSearchTerm(e.target.value)}
-                            className="w-full pl-14 pr-6 py-4 rounded-xl border-2 border-purple-200 bg-white focus:border-purple-500 focus:ring-4 focus:ring-purple-200 outline-none transition-all duration-300 text-gray-800 placeholder-purple-300"
+                            className="w-full pl-10 sm:pl-14 pr-4 sm:pr-6 py-3 sm:py-4 rounded-xl border-2 border-purple-200 bg-white focus:border-purple-500 focus:ring-4 focus:ring-purple-200 outline-none transition-all duration-300 text-gray-800 placeholder-purple-300"
                         />
                     </div>
                     <p className="text-center mt-4 text-gray-600">
@@ -60,7 +60,7 @@ const ProjectsSection = () => {
                 {/* Projects Grid */}
                 <div
                     ref={ref}
-                    className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    className={`grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                         }`}
                 >
                     {filteredProjects.map((project, index) => (

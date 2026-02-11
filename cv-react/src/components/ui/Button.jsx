@@ -39,7 +39,7 @@ const Button = ({
         if (onClick) onClick(e);
     };
 
-    const baseClasses = 'relative px-8 py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center overflow-hidden group transform hover:scale-105 active:scale-95';
+    const baseClasses = 'relative px-6 py-3 sm:px-8 sm:py-4 rounded-xl font-semibold transition-all duration-300 inline-flex items-center justify-center overflow-hidden group transform hover:scale-105 active:scale-95 w-full sm:w-auto';
 
     const variantClasses = {
         primary: 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-colorful hover:shadow-neon',

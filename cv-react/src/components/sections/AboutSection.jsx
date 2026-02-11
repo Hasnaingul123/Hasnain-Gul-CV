@@ -10,8 +10,8 @@ const AboutSection = () => {
     const [ref, isVisible] = useScrollAnimation();
 
     return (
-        <section id="about" className="py-24 md:py-32 bg-gradient-to-b from-purple-50 via-pink-50 to-blue-50">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="about" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-gradient-to-b from-purple-50 via-pink-50 to-blue-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionTitle>About Me</SectionTitle>
 
                 <div
@@ -32,11 +32,11 @@ const AboutSection = () => {
 
                     {/* Education Section */}
                     <Card className="max-w-5xl mx-auto border-l-4 border-purple-500" glowEffect colorScheme="purple">
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-colorful">
-                                <i className="fas fa-graduation-cap text-3xl text-white"></i>
+                        <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center shadow-colorful">
+                                <i className="fas fa-graduation-cap text-2xl sm:text-3xl text-white"></i>
                             </div>
-                            <h3 className="font-heading text-3xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                            <h3 className="font-heading text-2xl sm:text-3xl font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                                 Education
                             </h3>
                         </div>

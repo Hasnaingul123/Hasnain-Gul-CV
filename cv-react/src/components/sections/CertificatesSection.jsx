@@ -13,15 +13,15 @@ const CertificatesSection = () => {
     const [selectedCertificate, setSelectedCertificate] = useState(null);
 
     return (
-        <section id="certificates" className="py-24 md:py-32 bg-white">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="certificates" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <SectionTitle subtitle="Professional certifications and internship experiences">
                     Certificates & Internships
                 </SectionTitle>
 
                 <div
                     ref={ref}
-                    className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    className={`grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                         }`}
                 >
                     {certificates.map((cert, index) => (
